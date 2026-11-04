@@ -14,7 +14,7 @@ read_name <- function(path) {
 }
 
 ui <- fluidPage(
-  titlePanel("DBR"),
+  titlePanel(read_name(config_path)),
   mainPanel(
     tags$div(
       style = "width: 140px; height: 140px; border: 2px solid blue; border-radius: 50%; display: flex; align-items: center; justify-content: center;",
